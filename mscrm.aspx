@@ -15,7 +15,7 @@ Private Sub Page_Load(ByVal sender As System.Object, ByVal E As System.EventArgs
 	
         
         Dim connectionString As String
-        connectionString = "server=vsv-sql-01;uid=sa;pwd=password;database=ITAMCO_MSCRM"
+        connectionString = "server=sq11;uid=sa;pwd=password;database=CRM"
  
         
         Dim mySqlConnection As SqlConnection
@@ -52,7 +52,7 @@ Dim sb As New StringBuilder
 
 sb.Append("<script> var NewWindow;")
 sb.Append("NewWindow = window.open(")
-sb.Append("'http://vsv-crm-01:5555/ITAMCO/sfa/conts/edit.aspx?id=" & myDataString)
+sb.Append("'http://sq11/sfa/conts/edit.aspx?id=" & myDataString)
 sb.Append("" & "','Report','toolbar=no,width=800,height=675,menubar=no,resizable=yes,maximize=yes'); NewWindow.focus();")
 sb.Append(chr(60) & "/script>")
 
